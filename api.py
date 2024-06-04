@@ -18,7 +18,7 @@ def get_data():
         database=os.getenv('MYSQL_DB')
     )
     cursor = db.cursor()
-    cursor.execute("SELECT * FROM your_table")
+    cursor.execute("SELECT * FROM Inventory")
     result = cursor.fetchall()
     cursor.close()
     db.close()
